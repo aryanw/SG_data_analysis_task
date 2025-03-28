@@ -1,4 +1,4 @@
-# **Data Analysis Project**
+# **Data Engineer Assignment**
 
 ## **Overview**
 This project focuses on analyzing various aspects of subscription and payment data using Python. The primary goal is to answer four data-related questions based on the provided datasets, which include industry-level subscription information, inflation rates, and payment methods. The analysis utilizes tools like Pandas, Matplotlib, and Seaborn for computation and visualization.
@@ -18,19 +18,12 @@ This project focuses on analyzing various aspects of subscription and payment da
 ### **2. Renewal Rate Analysis by Industry**
 - **Objective**: Calculate and identify the industry with the highest renewal rate based on subscription data.
 - **Approach**:
-  - Calculate the renewal rate for each industry using the formula:
-    
-
-\[
-    \text{Renewal Rate} = \frac{\text{Total Renewed Subscriptions}}{\text{Total Subscriptions}} \times 100
-    \]
-
-
+  - Calculate the renewal rate for each industry.
   - Find the industry with the highest renewal rate and display detailed metrics such as total subscriptions, total renewed, and renewal percentages.
 - **Result**: A summary table showing renewal rate metrics for each industry, along with a bar graph visualization.
 
-![Renewal Rate Chart](images/Screenshot 2025-03-28 132128.png)
-![Industry with highest Renewal Rate](images/Screenshot 2025-03-28 132202.png)
+![Renewal Rate Chart](images/renewal_rate1.png)
+![Industry with highest Renewal Rate](images/renewal_rate2.png)
 ---
 
 ### **3. Average Inflation Rate at Subscription Renewal**
@@ -40,14 +33,17 @@ This project focuses on analyzing various aspects of subscription and payment da
   - Use the `end_date` column from the `subscription_information` table to align renewal dates with inflation data.
   - Calculate the average inflation rate at renewal dates across all industries.
 - **Result**: The output includes the calculated average inflation rate for all subscriptions at the time of renewal.
-![Avg Inflation Rate by Industry](images/Screenshot 2025-03-28 132231.png) 
-![Avg Overall Inflation Rate](images/Screenshot 2025-03-28 134919.png)
+
+![Avg Overall Inflation Rate](images/inflation_rate2.png)
+![Avg Inflation Rate by Industry](images/inflation_rate1.png) 
 ---
 
 ### **4. Median Amount Paid Per Year**
 - **Objective**: Calculate the median amount paid for subscriptions each year, across all payment methods.
 - **Approach**:
   - Extract the year from the `payment_date` column in the `payment_information` table.
-  - Group the data by year and calculate the median of the
+  - Group the data by year and calculate the median of the `amount_paid` column.
+  - Visualize the results using bar charts to compare yearly medians.
+- **Result**: A summary table and visualization showcasing median subscription payments for each year.
  
-![Renewal Rate Chart](images/Screenshot 2025-03-28 132254.png)
+![Median Amount Chart](images/median_amount1.png)
