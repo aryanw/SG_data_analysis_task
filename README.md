@@ -19,7 +19,7 @@ This project focuses on analyzing various aspects of subscription and payment da
 - **Objective**: Calculate and identify the industry with the highest renewal rate based on subscription data.
 - **Approach**:
   - Calculate the renewal rate for each industry.
-  - Find the industry with the highest renewal rate and display detailed metrics such as total subscriptions, total renewed, and renewal percentages.
+  - Find the industry with the highest renewal rate and display detailed metrics such as total subscriptions, total renewed.
 - **Result**: A summary table showing renewal rate metrics for each industry, along with a bar graph visualization.
 
 ![Renewal Rate Chart](images/renewal_rate1.png)
